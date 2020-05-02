@@ -1,0 +1,190 @@
+
+
+
+ //footer
+ .footer{
+    margin: 1rem 1rem 4rem 1rem;
+   .footer__logo{
+         display: block;
+         margin: 20px auto;
+         text-align: center;
+         padding: 1rem;
+         
+     
+   }
+   .footer__wrapper{
+         display: flex;
+        justify-content: space-around;
+        align-items: center;
+         margin: 1rem 1rem;
+         text-align: center;
+         .footer__center{
+           line-height: 3.5rem;
+           
+           .footer__center--title {
+             color:  $bleu-color;
+             font-weight: bold;
+             font-size: 27px;
+             font-family: 'cairo',sans-serif;
+         }
+         .footer__center--para {
+             font-weight: 700;
+             font-size: 19px;
+             font-family: 'cairo',sans-serif;
+         }
+         .footer__center--num {
+             font-size: 27px;
+             color: $vr_color;
+             font-weight: 700;
+             font-family: 'cairo',sans-serif;
+         }
+         }
+        
+       .footer__law p{
+         font-size: 18px;
+         font-weight: 400;
+         font-family: 'cairo',sans-serif;
+         margin: 1rem 0 0 0;
+         text-align: justify;
+         color: $p-gry-color;
+         line-height: 2.2rem;
+   
+     }
+     .footer__left--list {
+      
+       list-style: none;
+       li {
+         padding: 5px 10px;
+         a {
+           text-decoration: none;
+           color: black;
+         }
+       }
+     }
+     .footer__left--btn {
+       border: 1.8px solid  $bleu-color;
+       align-self: start;
+       border-radius: 10px;
+      
+     
+       span {
+         margin-right: 8px;
+         color: black;
+         position: relative;
+         bottom: 5px;
+         font-size: 20px;
+         font-weight: 600;
+       }
+     }
+     .footer__left--acceuil{
+       color:  $bleu-color;
+       font-size: 24px;
+       font-weight: bold;
+       margin: 1rem 0;
+       .acceuil{
+        font-weight: 700;
+         color:  $bleu-color;
+        
+         
+       }
+ 
+     }
+     .footer__left--conseils{
+       font-size: 24px;
+       font-weight: bold;
+       
+     }
+     
+   }
+   
+ }
+ 
+ .bottom-footer{
+   background-color:  $bleu-color;
+   width: 100%;
+   height: 35px;
+ }
+ 
+ @media(max-width:375px and 425px and 768px){
+   .footer{
+     margin-bottom: 2rem;
+     .footer__logo{
+       margin: 20px 0 0 0;
+     }
+     .footer__wrapper{
+       display: flex;
+       justify-content: space-around;
+       flex-wrap: wrap;
+       align-items: center;
+       font-size: 12px;
+       .footer__center{
+         line-height: 2rem;
+         
+         .footer__center--title {
+           color:  $bleu-color;
+           font-weight: bold;
+           font-size: 11px;
+           font-family: 'cairo',sans-serif;
+       }
+       .footer__center--para {
+           font-weight: 700;
+           font-size: 10px;
+           font-family: 'cairo',sans-serif;
+       }
+       .footer__center--num {
+           font-size: 11px;
+           color: grey;
+           font-weight: 700;
+           font-family: 'cairo',sans-serif;
+       }
+       }
+       .footer__left--btn {
+         border: 1.8px solid  $bleu-color;
+         align-self: start;
+         border-radius: 10px;
+         span {
+           margin-right: 16px;
+           color: black;
+           position: relative;
+           bottom: 4px;
+           font-size: 10px;
+           font-weight: 700;
+         }
+       }
+       .footer__left--acceuil{
+         color: black;
+         font-size: 10px;
+         font-weight: bold;
+         margin: 0.5rem 0;
+         .acceuil{
+           color: black;
+           font-weight: 700;
+           
+         }
+   
+       }
+       .footer__left--conseils{
+         font-size: 10px;
+         font-weight: bold;
+         .conseil{
+           color:  $bleu-color;
+         }
+         
+       }
+       .footer__right p{
+         font-size: 8px;
+         font-weight: 400;
+         font-family: 'cairo',sans-serif;
+         margin: 2rem 0 0 0rem;
+         text-align: center;
+         color: grey;
+         line-height: 1rem;
+   
+     }
+       
+     }
+     
+     
+     
+   }
+ }

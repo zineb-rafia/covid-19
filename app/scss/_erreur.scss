@@ -1,0 +1,49 @@
+@import "variable" ;
+@import "base";
+
+
+.erreur {
+  margin-top: 20rem;
+  margin-top: 6rem;
+  padding: 3rem 0;
+  text-align: center;
+
+
+  img {
+     padding: 0 2rem 2rem 2rem;
+    margin:  0 auto;
+
+  }
+
+
+ 
+  .erreur-title{
+      padding: 2rem 0;
+      font-size: 50px;
+      font-weight: bold;
+      color: $bleu-color;
+      @media(max-width: 375px){
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+
+  }
+  .erreur-button{
+      background-color:$bleu-color;
+      outline: none;
+      color: white;
+      padding: 5px 10px;
+      border: 2px solid  $bleu-color;
+      border-radius: 5px;
+      text-align: center;
+      text-decoration: none;
+      a {
+          font-size: 30px ;
+          font-weight: 700;
+          text-decoration: none;
+          text-align: center;
+          color: white;
+        }
+  }
+}

@@ -1,0 +1,56 @@
+
+
+
+
+ .navbar{
+    display: flex;
+        justify-content: space-between;
+        padding-left: 15px;
+         padding-right: 15px;
+         background-image: url("../../img/SVG/Merged\ bar-1.svg");
+         background-size: cover;
+        align-items: center;
+         position: fixed;
+         z-index: 2;
+        background-color: $bagrwd-color;
+        top: 0;
+         width: 100%;
+        height: 88px;
+    .navbar-items {
+    max-width: 320px;
+     display: flex;
+     max-width: 320px;
+     flex: 3;
+     justify-content: space-between;
+     display: flex;
+     justify-content: space-between;
+     list-style: none;
+     margin-right: 24px;
+            li {
+              padding: 5px 10px;
+            a {
+              text-decoration: none;
+            color: $bleu_color;
+             }
+         }
+         .active{
+           color: black;
+         }
+               
+    }
+      .navbar-items-btn {
+border: 2px solid $bleu_color;
+align-self: start;
+border-radius: 10px;
+
+span {
+  margin-right: 8px;
+  color: $bleu_color;
+  position: relative;
+  bottom: 7px;
+}
+}
+
+ 
+
+}

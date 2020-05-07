@@ -1,87 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/css/main.css">
-   
-
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dist/css/main.css">
+  <!-- <link rel="stylesheet" href="/src/css/normalize.css"> -->
+  <title>Document</title>
 </head>
+
 <body>
-    <!-- nav---------------------------------->
- <nav class="navbar">
-    <a href="#" class="c"><img src="img/SVG/logo__sante-1.svg" alt="ministre de santé" /></a>
-    <ul class="navbar-items">
-      <li><a href="conseil.html" >Conseil</a></li>
-      <li><a href="index.html" class="active">Acceuil</a></li>
-      <li class="navbar-items-btn">
-        <a href="#"><span>عربي</span><img src="img/SVG/www.svg" alt="" class="navbar--items--btn-img" /></a>
-      </li>
-    </ul>
-  </nav>
-  
-</div>
-<div  class="switsh">
-
-    <p class="question">Pensez-vous avoir ou avoir eu de la fièvre ces 10 derniers jours (frissons, sueurs) ?</p>
-    <p class="question"></p>
-    <div class="reponce">
-        <div>
-            <input type="radio" id="oui" name="option" value="1">
-            <label for="oui" class="option">
-                <i class="fa fa-check" aria-hidden="true"></i>
-                <span>oui</span>
-            </label>
+  <main>
+    <section class="main__inform sect ">
+      <div class="main__tags">
+        <div class="main__tag">
+          <img class="main__inform__img  main__inform__img--active" src="img/SVG/active.svg" alt="">
+          <h3 class="h3__active">Informations</h3>
         </div>
-        <div>
-            <input type="radio" id="non" name="option" value="2">
-            <label for="non" class="option"> 
-                <i class="fa fa-times" aria-hidden="true"></i>
-                <span>non</span>
-            </label>
+        <div class="main__tag">
+          <img class="main__inform__img" src="img/SVG/desactive.svg" alt="">
+          <h3>Questionnaire</h3>
         </div>
-    </div>
-
-</div>
-
-<div class="btn-switsh">
-    <button id="lastbutton " class="last-btn">Précédant</button>
-    <button id="lastbutton " class="last-btn" >Précédant</button>
-    <button id="nextbutton" class="next-btn addmargin">Suivant</button>
-</div>
-
-
-  
-
-  <footer class="footer">
-    <div class="footer__logo"><img src="img/png/logo__sante-1.png" alt="logo"></div>
-    <div class="footer__wrapper">
-      <div class="footer__left">
-        <ul class="footer__left--list">
-          <li class="footer__left--btn"><a href="#"> <span> عربي </span>              <img src="img/SVG/www.svg" alt="" class="footer__left--btn-img"/></a>
-          <li class="footer__left--acceuil"><a class="acceuil" href="/Acceuil.html">Acceuil</a></li>
-          <li class="footer__left--conseils"><a class="conseil"href="">Conseil</a></li>
-        </ul>
+        <div class="main__tag">
+          <img class="main__inform__img" src="img/SVG/desactive.svg" alt="">
+          <h3>Résultats</h3>
+        </div>
       </div>
-      <div class="footer__center">
-        <h5 class="footer__center--title">Contacts utiles</h5>
-        <p class="footer__center--para">Chiffre économique "Alo épidémie vigilance"</p>
-        <p class="footer__center--num">080 100 47 47</p>
-        <p class="footer__center--para">Aide médicale urgente</p>
-        <p class="footer__center--num">141</p>
+      <div class="main__Preambule">
+        <h3>Préambule</h3>
+        <p>« L’application est fournie à titre gratuit, en l’état, uniquement à des fins d’information pour
+          contribuer à fluidifier la prise en charge des personnes par les services d’urgences pendant l’épidémie de
+          Coronavirus COVID-19. L’exhaustivité, l’exactitude, le caractère à jour des informations et contenus mis à
+          disposition dans cette application, ou leur adéquation à des finalités particulières, ne sont pas garantis.
+        </p>
+        <hr>
+        <p> L’utilisation de l’application et de son contenu ne remplace en aucun cas le conseil nécessaire donné par
+          votre médecin ou votre pharmacien ou tout autre professionnel de santé compétent dans chaque cas
+          particulier. Tout examen ou décision de l’utilisateur doit être réalisé ou prise de manière autonome sur la
+          base de l’information scientifique et clinique pertinente, de la notice officielle du produit concerné le
+          cas échéant et en cas de doute, en consultant un médecin compétent. </p>
       </div>
-      <div class="footer__law">
-        <p>Algorithme d'orientation mis à jour sur les recommandations en vigueur<br>
-          au 22/03/2020 à 16h15. Ce site d’information n’est pas un dispositif médical,<br>
-          il ne délivre pas d’avis médical. Projet solidaire d'urgence,financé par l’Alliance<br>
-          Digitale contre le COVID-19 : @maladiecovid19</p>
+      <a href="#" id="demarer">Demarer le test</a>
+    </section>
+    <section class="main__questionnaire sect affiche">
+      <div class="main__tags">
+        <div class="main__tag">
+          <img class="main__inform__img" src="img/SVG/desactive.svg" alt="">
+          <h3 class="h3__active">Informations</h3>
+        </div>
+        <div class="main__tag">
+          <img class="main__inform__img  main__inform__img--active" src="img/SVG/active.svg" alt="">
+          <h3>Questionnaire</h3>
+        </div>
+        <div class="main__tag">
+          <img class="main__inform__img" src="img/SVG/desactive.svg" alt="">
+          <h3>Résultats</h3>
+        </div>
       </div>
-    </div>
-  </footer>
-  <div class="bottom-footer"></div>
-  <!--fin-footer-->
+      <form id="form">
+        <div class="numerotation">
+          <div class="relative">
+            <div class="progressbar">
+            </div>
+            <progress id="file" max="22" value=""> </progress>
+          </div>
+          <p id="afficheNum"></p>
+        </div>
+        <div class="questions">
 
-    
+        </div>
+        <div class="inputs">
+          <input type="submit" value="precedent" id="precedent">
+          <input type="submit" value="suivant" id="suivant">
+          <input type="submit" value="afficher le resultat" id="resultat" class="affiche">
+        </div>
+      </form>
+
+    </section>
+    <section class="main__Resultat sect affiche">
+      <div class="main__tags">
+        <div class="main__tag">
+          <img class="main__inform__img " src="img/SVG//desactive.svg" alt="">
+          <h3 class="h3__active">Informations</h3>
+        </div>
+        <div class="main__tag">
+          <img class="main__inform__img" src="img/SVG/desactive.svg" alt="">
+          <h3>Questionnaire</h3>
+        </div>
+        <div class="main__tag">
+          <img class="main__inform__img main__inform__img--active " src="img/SVG/active.svg" alt="">
+          <h3>Résultats</h3>
+        </div>
+      </div>
+      <div class="affiche__resultat">
+        <h3>Résultat</h3>
+        <p id="affichageResult"> </p>
+        <hr>
+        <span> Restez chez vous au maximum en attendant que les symptômes disparaissent. Prenez votre température deux
+          fois par jour. Rappel des mesures d’hygiène. </span>
+      </div>
+      <input type="submit" value="Recommencer le test" id="repeter">
+    </section>
+  </main>
 </body>
+<script src="test.js"></script>
+<script src="variable.js"></script>
+<script src="algo.js"></script>
+
 </html>
